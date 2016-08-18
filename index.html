@@ -24,51 +24,51 @@
 
 <script type="text/javascript">
 
-var wins = 0;
-var losses = 0;
-var guessesLeft = 9;
-var guessesSoFar = [];
+// // var wins = 0;
+// // var losses = 0;
+// // var guessesLeft = 9;
+// // var guessesSoFar = [];
 
 
 
-document.onkeyup = function(event) {
+// // document.onkeyup = function(event) {
 
-	var userInput = String.fromCharCode(event.keyCode).toLowerCase();
+// // 	var userInput = String.fromCharCode(event.keyCode).toLowerCase();
 
-	function random_letter() {
+// // 	function random_letter() {
 
-    var chars = "abcdefghijklmnopqurstuvwxyz";
+// //     var chars = "abcdefghijklmnopqurstuvwxyz";
 
-    return chars.substr( Math.floor(Math.random() * 26), 1);
-	};
+// //     return chars.substr( Math.floor(Math.random() * 26), 1);
+// // 	};
 
-	var rLetter = random_letter();
-
-
-	guessesSoFar.push(userInput)
-
-	for (var i = 0; i < 9; i++) {
-		guessesSoFar[i]
-	}
+// // 	var rLetter = random_letter();
 
 
-	if (userInput == rLetter) {
-		wins++;
-	}  
-	else if (userInput !== rLetter) {
-		guessesLeft--;
+// // 	guessesSoFar.push(userInput)
+
+// // 	for (var i = 0; i < 9; i++) {
+// // 		guessesSoFar[i]
+// // 	}
+
+
+// // 	if (userInput == rLetter) {
+// // 		wins++;
+// // 	}  
+// // 	else if (userInput !== rLetter) {
+// // 		guessesLeft--;
 		
-		}
+// // 		}
 		
 
-// ---------------------------
+// // // ---------------------------
 
-	// if (userInput !== rLetter) {
-	// 	guessesLeft--;
-	// 		if (guessesLeft=0) {
-	// 			Losses++;
-	// 		}
-	// }
+// // 	// if (userInput !== rLetter) {
+// // 	// 	guessesLeft--;
+// // 	// 		if (guessesLeft=0) {
+// // 	// 			Losses++;
+// // 	// 		}
+// // 	// }
 
 
 
@@ -78,18 +78,18 @@ document.onkeyup = function(event) {
 
 
 
-	var html = "<h1>The Psychic Game</h1>" + 
-	"<h2>Guess What Letter I Am Thinking Of</h2>" + 
-	"<h3>Wins: " + wins + "</h3>" + 
-	"<h3>Losses: " + losses + "</h3>" + 
-	"<h3>Guesses Left: " + guessesLeft + "</h3>" + 
-	"<h3>Your Guesses So Far: " + guessesSoFar + "</h3>";
+// 	var html = "<h1>The Psychic Game</h1>" + 
+// 	"<h2>Guess What Letter I Am Thinking Of</h2>" + 
+// 	"<h3>Wins: " + wins + "</h3>" + 
+// 	"<h3>Losses: " + losses + "</h3>" + 
+// 	"<h3>Guesses Left: " + guessesLeft + "</h3>" + 
+// 	"<h3>Your Guesses So Far: " + guessesSoFar + "</h3>";
 
 	
-	document.querySelector('#game').innerHTML = html;
+// 	document.querySelector('#game').innerHTML = html;
 
 	
-}
+// }
 
 
 
